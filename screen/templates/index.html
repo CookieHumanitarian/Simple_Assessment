@@ -6,13 +6,22 @@
     </head>
 
     <body>
-        <table>
-            {% for field, value in tables.get_fields %}
+        <h1>Table Values</h1>
+        <table border="1">
+            <thead>
                 <tr>
-                    <th>{{ field }}</th>
+                    <th>Index #</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for field, value in tables.items %}
+                <tr>
+                    <td>{{ field }}</td>
                     <td>{{ value }}</td>
                 </tr>
-            {% endfor %}
-            </table>
+                {% endfor %}
+            </tbody>
+        </table>
     </body>
-</html>
+    </html>
