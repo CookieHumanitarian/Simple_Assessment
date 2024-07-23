@@ -9,6 +9,6 @@ table = {
 
 #View of index displaying table 1 and 2
 def index(request):
-    return render(request, "screen/index.html", {
+    return render(request, "index.html", {
         "tables": table
     })
