@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>{% block title %}Screening{% endblock %}</title>
-        <link href="{% static 'screen/styles.css' %}" rel="stylesheet">
+        <link href= "static/styles.css" rel="stylesheet">
 
     </head>
 
@@ -12,15 +12,15 @@
         <table>
             <thead>
                 <tr>
-                    <th>Index #</th>
-                    <th>Value</th>
+                    <th class="left-align not_bolded">Index #</th>
+                    <th class="left-align not_bolded">Value</th>
                 </tr>
             </thead>
             <tbody>
                 {% for field, value in table_one.items %}
                 <tr>
-                    <td>{{ field }}</td>
-                    <td>{{ value }}</td>
+                    <td class="left-align">{{ field }}</td>
+                    <td class="right-align">{{ value }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
@@ -28,18 +28,18 @@
 
      <!-- Table 2--> 
      <h1>Table 2 Values</h1>
-     <table>
+     <table class="table_2">
          <thead>
-             <tr>
-                 <th>Category</th>
-                 <th>Value</th>
+             <tr class="table_2">
+                 <th class="center-align table_2"=>Category</th>
+                 <th class="center-align table_2">Value</th>
              </tr>
          </thead>
          <tbody>
              {% for field, value in table_two.items %}
              <tr>
-                 <td>{{ field }}</td>
-                 <td>{{ value }}</td>
+                 <td class="center-align table_2">{{ field }}</td>
+                 <td class="center-align table_2">{{ value }}</td>
              </tr>
              {% endfor %}
          </tbody>

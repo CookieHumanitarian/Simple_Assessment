@@ -1,0 +1,32 @@
+/*Universal CSS*/
+.left-align {
+    text-align: left;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.center-align {
+    text-align: center;
+}
+
+.not_bolded {
+    font-weight: normal;
+}
+
+/*Table 1 CSS*/
+table, th, td {
+    border: 1px solid;
+    border-collapse: collapse;
+    width: 20%;
+    border-color: #D3D3D3;
+}
+
+/*Table 2 CSS*/
+.table_2 {
+    border: 2px solid;
+    width: 30%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
